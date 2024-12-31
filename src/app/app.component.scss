@@ -1,0 +1,44 @@
+
+
+  .nav{
+    background-color: aqua;
+    padding: auto;
+    display:flex;
+    height: 70px;
+    justify-content: space-between;
+    
+  }
+
+  .nav_menu{
+    padding: 29px;
+   
+    
+  }
+  .nav_menu a{
+    padding: 7px;
+    text-decoration: none;
+   color:  black; 
+  }
+  
+
+  .logo{
+    cursor: pointer;
+  }
+
+  .user-info{
+    display:  flex;
+    
+  }
+  .user-info a{
+   padding: 5px;
+   margin: 0 5px;    
+  }
+
+  .username{
+    background: #d7afaf;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    outline: none;
+    border: 0;
+  }

@@ -1,0 +1,29 @@
+
+<!-- Page content-->
+<div class="container mt-5" *ngIf="(blogEntry$ | async) as blogEntry">
+    <div class="row">
+        <div class="col-lg-8">
+            <!-- Post content-->
+            <article>
+                <!-- Post header-->
+                <header class="mb-4">
+                    <!-- Post title-->
+                    <h1 class="fw-bolder mb-1">Welcome to {{blogEntry.title}} !</h1>
+                    <!-- Post meta content-->
+                    <div class="text-muted fst-italic mb-2">Posted on {{blogEntry.createdAt | date: 'yyyy-MMM-dd'}} by {{blogEntry.author?.name}}</div>
+                    
+                </header>
+                <!-- Preview image figure-->
+                <figure class="mb-4"><img class="img-fluid rounded" src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg" alt="..." /></figure>
+                <!-- Post content-->
+                <section class="mb-5">
+                    <h2 class="fw-bolder mb-1">{{blogEntry.title}}</h2>
+                    <hr>
+                    <p class="fs-5 mb-4">{{blogEntry.description}}</p>
+                </section>
+            </article>
+            
+        </div>
+        
+    </div>
+</div>

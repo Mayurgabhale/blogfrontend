@@ -1,0 +1,27 @@
+.form{
+   display: flex; 
+   justify-content: center;
+   align-items: center;
+   min-height:80vh;
+   background-color: white;
+   padding: 20px;
+}
+.main-container{
+    border: 1px solid black;
+    max-width: 300px;
+    padding: 20px;
+    text-align: center;
+}
+
+.input-box{
+    margin:15px 0;   
+}
+.input-box input{
+    outline: none;
+    border: 1px solid blue($color: #000000);
+    
+}
+
+button{
+    background: blue;
+}

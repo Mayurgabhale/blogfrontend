@@ -1,0 +1,13 @@
+<div *ngIf="user" class="main-div">
+    <div class="profile-card">
+
+        <h3 class="uname">User Profile</h3>
+        <p><strong>Name:</strong> {{ user.name }}</p>
+        <p><strong>Email:</strong> {{ user.email }}</p>
+        <p><strong>UserName:</strong> {{user.username }}</p>
+    </div>
+</div>
+
+<div *ngIf="!user">
+    <p>No user data available.</p>
+</div>

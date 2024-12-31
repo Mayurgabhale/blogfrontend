@@ -1,0 +1,48 @@
+<div class="update-delete-blog">
+
+    <div *ngIf="selectedBlogId !== null" class="blog-form">
+        <h3>Update Blog</h3>
+        <form [formGroup]="blogForm" (ngSubmit)="updateBlog()">
+          <div>
+            <label for="title">Title:</label>
+            <input id="title" formControlName="title" type="text" />
+          </div>
+          <div>
+            <label for="content">Content:</label>
+            <textarea id="content" formControlName="description"></textarea>
+          </div>
+          <div class="edit-btn">
+
+              <button type="submit" [disabled]="blogForm.invalid">Update</button>
+              <button type="button" (click)="selectedBlogId = null">Cancel</button>
+          </div>
+        </form>
+      </div>
+
+
+
+
+
+<!-- ................... -->
+
+
+    <div class="blog-list">
+      <ul>
+        <li *ngFor="let blog of blogs">
+
+            <div class="blog-con">
+
+                <h4  >Title: <span class="title">{{ blog.title }}</span> </h4>
+                <p>{{ blog.description }}</p>
+            </div>
+
+          <div class="btn-con">
+
+              <button (click)="selectBlog(blog)">Edit</button>
+              <button *ngIf="blog.id !== undefined" (click)="deleteBlog(blog.id)">Delete</button>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  

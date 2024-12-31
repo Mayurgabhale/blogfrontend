@@ -1,0 +1,104 @@
+.update-delete-blog {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h2,
+h3 {
+    color: #333;
+}
+
+.blog-list {
+    margin-bottom: 20px;
+    width: 70%;
+}
+
+.blog-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.blog-list li {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    display: flex;
+}
+
+.blog-list h4 {
+    margin: 0 0 5px 0;
+}
+
+.blog-list p {
+    margin: 0 0 10px 0;
+    color: #666;
+}
+.blog-con{
+    width: 500px;
+
+}
+
+.blog-list .btn-con{
+
+    margin-left: 150px;
+
+}
+
+.edit-btn{
+    display: flex;
+}
+button {
+    padding: 8px 12px;
+    margin-right:5px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    height: 40px;
+    width: 70px;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+button:first-of-type {
+    background-color: #4caf50;
+    color: white;
+}
+
+button:last-of-type {
+    background-color: #f44336;
+    color: white;
+}
+
+.blog-form {
+    margin-top: 20px;
+    height: 100vh;
+
+}
+.title{
+    color: #4caf50;
+}
+
+.blog-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.blog-form input,
+.blog-form textarea {
+    width: 50%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.blog-form button {
+    display: flex;
+    background-color: #007bff;
+    color: white;
+}
